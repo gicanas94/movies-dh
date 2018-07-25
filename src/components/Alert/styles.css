@@ -1,0 +1,25 @@
+.alert {
+    font-size: 1.1em;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.alert p {
+    margin: 0;
+}
+
+
+.alert.success {
+    background-color: #C2EE8E;
+}
+
+.alert.warning {
+    background-color: #F3F69C;
+}
+
+.alert.error {
+	background-color: #DD6D6D
+}

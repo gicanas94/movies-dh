@@ -1,0 +1,45 @@
+.movie {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.movie:hover .movie-buttons {
+    display: flex;
+}
+
+.movie img {
+    max-width: 100%;
+}
+
+.movie-buttons {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    transform: translateY(-100%);
+    width: 100%;
+}
+
+.movie ion-icon {
+    font-size: 4em;
+    padding: 5px;
+}
+
+.movie .information-circle {
+    color: #48B5E6;
+}
+
+.movie .information-circle:hover {
+    color: #79C8EC;
+}
+
+.movie .trash {
+    color: #E64848;
+}
+
+.movie .trash:hover {
+    color: #ED6C6C;
+}

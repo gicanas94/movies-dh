@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react'
 import './App.css'
-import SearchBar from './SearchBar'
-import Movies from './Movies'
+import SearchBar from './components/SearchBar'
+import Movies from './components/Movies'
+import { NavLink } from 'react-router-dom'
 
 class App extends Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class App extends Component {
         }
     }
 
-    handleMovieToSearch = event => {
+    handleSearchMovie = event => {
         this.setState({
             movieToSearch: event.target.value
         })
@@ -23,14 +24,13 @@ class App extends Component {
             <Fragment>
                 <header>
                     <nav>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Movies</a></li>
-                        <li><a href=""><strike>My List</strike></a></li>
+                        <li><NavLink activeStyle={{textDecoration: "underline"}} exact to="/">Home</NavLink></li>
+                        <li><NavLink activeStyle={{textDecoration: "underline"}} to="/mylist">My List</NavLink></li>
                     </nav>
 
-                    <SearchBar movieToSearch={this.handleMovieToSearch}/>
-
                     <h1>Movies</h1>
+
+                    <SearchBar onSearchMovie={this.handleSearchMovie}/>
                 </header>
 
                 <Movies movieToSearch={this.state.movieToSearch}/>

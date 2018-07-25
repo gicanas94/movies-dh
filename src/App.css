@@ -3,29 +3,28 @@ h1, h2 {
 }
 
 button {
-    background-color: #3e3e3e;
+    background-color: #3E3E3E;
     border: 1px solid #000000;
     border-radius: 5px;
-    color: #eeeeee;
+    color: #EEEEEE;
     font-size: 1.2em;
     font-weight: bold;
     padding: 10px 15px;
 }
 
 button:hover {
-    background-color: #5c92cb;
+    background-color: #5C92CB;
 }
 
 button.disabled {
-    background-color: #604c4c;
+    background-color: #604C4C;
 }
 
 /* ---------- */
 
 header {
     align-items: center;
-    background-color: #4a0000;
-    border-bottom: 1px solid #300505;
+    background-color: #4A0000;
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -46,7 +45,7 @@ header li {
 }
 
 header li a {
-    color: #eeeeee;
+    color: #EEEEEE;
     font-size: 1.5em;
     margin-right: 10px;
     padding: 10px;
@@ -63,9 +62,6 @@ header li a:hover {
 }
 
 header h1 {
-    color: #eeeeee;
+    color: #EEEEEE;
     font-family: 'Pacifico', cursive;
-    margin-right: 30px;
 }
-
-/* ---------- */
