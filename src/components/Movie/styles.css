@@ -16,16 +16,10 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
-    height: 100%;
+    height: 99%;
     justify-content: center;
     position: absolute;
-    transform: translateY(-100%);
     width: 100%;
-}
-
-.movie ion-icon {
-    font-size: 4em;
-    padding: 5px;
 }
 
 .movie .information-circle {
@@ -42,4 +36,9 @@
 
 .movie .trash:hover {
     color: #ED6C6C;
+}
+
+.movie ion-icon {
+    font-size: 4em;
+    padding: 5px;
 }

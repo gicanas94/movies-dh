@@ -2,4 +2,4 @@
 
 Digital House integrative project.
 
-Used technologies: REACT, CSS.
+Used technologies: REACT.js, REDUX, CSS, HTML.

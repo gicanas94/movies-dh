@@ -13,8 +13,6 @@ class MoviesApi {
     }
 
     getPopularMovies = () => this.axios.get('/movie/popular')
-    getTopRatedMovies = () => this.axios.get('/movie/top_rated')
-    getUpcomingMovies = () => this.axios.get('/movie/upcoming')
     getMovie = id => this.axios.get(`/movie/${id}`)
 }
 

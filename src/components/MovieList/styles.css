@@ -2,3 +2,21 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 16.66%);
 }
+
+@media (max-width: 1024px) {
+    .movie-list {
+        grid-template-columns: repeat(auto-fill, 25%);
+    }
+}
+
+@media (max-width: 600px) {
+    .movie-list {
+        grid-template-columns: repeat(auto-fill, 50%);
+    }
+}
+
+@media (max-width: 375px) {
+    .movie-list {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}

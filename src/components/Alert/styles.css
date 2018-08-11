@@ -11,7 +11,6 @@
     margin: 0;
 }
 
-
 .alert.success {
     background-color: #C2EE8E;
 }
@@ -21,5 +20,5 @@
 }
 
 .alert.error {
-	background-color: #DD6D6D
+    background-color: #DD6D6D;
 }

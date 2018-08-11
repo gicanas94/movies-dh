@@ -4,14 +4,19 @@ import { CSSTransitionGroup  } from 'react-transition-group'
 import './styles.css'
 import Movie from '../Movie'
 
-const MovieList = ({movies, onViewDetails, onDeleteMovie}) => (
-    <CSSTransitionGroup transitionName="transition" className="movie-list">
+const MovieList = ({movies, onViewMovieDetails, onDeleteMovie}) => (
+    <CSSTransitionGroup
+        transitionEnterTimeout={150}
+        transitionLeaveTimeout={150}
+        transitionName="transition"
+        className="movie-list">
+        
         {movies.map(movie =>
             <Movie
                 key={movie.id}
                 title={movie.title}
                 posterPath={movie.poster_path}
-                onViewDetails={onViewDetails ? () => onViewDetails(movie) : null}
+                onViewMovieDetails={onViewMovieDetails ? () => onViewMovieDetails(movie) : null}
                 onDeleteMovie={() => onDeleteMovie(movie)}/>
         )}
     </CSSTransitionGroup>

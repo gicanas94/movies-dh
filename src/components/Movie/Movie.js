@@ -1,12 +1,11 @@
 import React from 'react'
 import './styles.css'
 
-const Movie = ({title, posterPath, onViewDetails, onDeleteMovie}) => (
+const Movie = ({title, posterPath, onViewMovieDetails, onDeleteMovie}) => (
     <div className="movie">
-        <img src={`https://image.tmdb.org/t/p/w500/${posterPath}`} alt={title}/>
         <div className="movie-buttons">
             {window.location.pathname !== '/mylist' &&
-                <span onClick={onViewDetails} className="information-circle">
+                <span onClick={onViewMovieDetails} className="information-circle">
                     <ion-icon name="information-circle"></ion-icon>
                 </span>
             }
@@ -15,6 +14,8 @@ const Movie = ({title, posterPath, onViewDetails, onDeleteMovie}) => (
                 <ion-icon name="trash"></ion-icon>
             </span>
         </div>
+
+        <img src={`https://image.tmdb.org/t/p/w500/${posterPath}`} alt={title}/>
     </div>
 )
 
