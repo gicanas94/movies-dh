@@ -1,3 +1,3 @@
-# Movies site
+# Movies app
 
-Digital House integrative project.
+Digital House course integral project.
